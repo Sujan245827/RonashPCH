@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <title>PCH - Notifications </title>
+
+    <!-- shadow effect for navbar and section end  -->
+    <style>
+        .navbar {
+            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, .5);
+        }
+
+        .muishadow {
+
+            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, .5);
+        }
+
+        .buttonhover:hover {
+
+            margin-left: 0px;
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+        }
+
+        .form-control:focus {
+            border-color: #D3D3D3;
+            box-shadow: 0 0 0 0.2rem #D3D3D3;
+        }
+
+        .nav-control:focus {
+            border-color: #D3D3D3;
+            box-shadow: 0 0 0 0.1rem #D3D3D3;
+        }
+
+        input[type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance:none;
+        }
+		
+		#pchlogo {
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 ps-3 fixed-top">
+        <!-- navbar collapse for lg screen  -->
+        <div class="container">
+            <a href="#" class=" "> <img id = "pchlogo" class='d-none d-sm-block' src="img/pchlogo.png" style="width:200px; ">
+                <!-- icon for sm screen  -->
+                <img class='d-block d-sm-none' src="img/pchlogo.png" style="width:130px; "> <!-- icon for lg screen  -->
+            </a>
+
+
+            <div class=" d-flex justify-content-end ">
+              
+                <button class="navbar-toggler nav-control" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navmenu">
+                    <!-- hamburger menu  -->
+                    <span class="navbar-toggler-icon"> </span>
+
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- navigation tabs -->
+
+
+
+                <ul class="navbar-nav ms-auto">
+					
+					
+					<li class="nav-item">
+                        <a href="dashboard.html" class="nav-link"> <span class='textcolor'>Dashboard </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="instructors.html" class="nav-link"> <span class='textcolor'> Instructors </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link"> <span class='textcolor'>Projects </span></a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="groups.html" class="nav-link"> <span class='textcolor'>Groups</span></a>
+                    </li>
+					
+					  <li class="nav-item">
+                        <a href="Students.html" class="nav-link"> <span class='textcolor'>Students</span></a>
+                    </li>
+					
+					  <li class="nav-item">
+                        <a href="notifications.html" class="nav-link"> <span class='textcolor'>Notification</span></a>
+                    </li>
+					
+					<li>
+					 <a href="index.html" class="btn btn-danger">Logout</a>
+                   </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+   
+
+    <!--Resources Page-->
+	
+
+
+	
+    <section id="" class="muishadow p-3 pt-md-5 p-lg-5">
+	
+	
+            <div class="row pt-3" style="margin-top:45px; margin-left:60px;">
+                <div class="col-md-6" >
+                    <div class="card text-center align-items-center" style="width: 70rem; height:30rem;">
+					<br/>
+					 <div style="width:80%;">
+                         <form class="d-flex btn-group pe-2  pb-2 " >
+                        <input class="form-control  me-0"  size="35" type="search" placeholder="Search for Notifications" aria-label="Search">
+                        <button type="button" class="btn btn-secondary ">Search</button>
+
+						</form>
+					
+
+
+<div style="padding-top:10px;"></div>
+<div class="card p-1">
+    <table style="">
+        <tr >
+            <td style="display:flex; padding-left:10px;"> Adam Smith has sent you a message : This is my message.</td>
+            
+        </tr>
+       
+        <!-- Add more rows if needed -->
+    </table>
+</div>
+
+
+<div style="padding-top:10px;"></div>
+<div class="card p-1">
+    <table style="">
+        <tr >
+            <td style="display:flex; padding-left:10px;"> Adam Smith has requested to join the group : Group Name</td>
+            
+        </tr>
+       
+        <!-- Add more rows if needed -->
+    </table>
+</div>
+
+						
+						</div>
+						
+                    </div>
+					
+                </div>
+                
+				
+				
+            </div>
+        </div>
+    </div>
+    <div class="pb-1"></div>
+</section>
+
+
+
+        <!-- Footer -->
+        <footer class="text-center text-xl-center bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright:
+                <a class="text-reset fw-bold" href="#">www.projectcollabhub.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
