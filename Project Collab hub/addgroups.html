@@ -56,6 +56,8 @@
 			padding-top:10px;
 			padding-bottom:10px;
 		}
+		
+		
     </style>
 
 </head>
@@ -94,16 +96,42 @@
 					<li class="nav-item">
                         <a href="dashboard.html" class="nav-link"> <span class='textcolor'>Dashboard </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="instructors.html" class="nav-link"> <span class='textcolor'> Instructors </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link"> <span class='textcolor'>Projects </span></a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a href="groups.html" class="nav-link"> <span class='textcolor'>Groups</span></a>
-                    </li>
+                    <!-- Instructors Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="instructorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Instructors </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="instructorsDropdown">
+							<li><a class="dropdown-item" href="addinstructors.html">Add Instructors</a></li>
+							<li><a class="dropdown-item" href="instructors.html">Manage Instructors</a></li>
+							
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Projects Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Projects </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="projectsDropdown">
+							<li><a class="dropdown-item" href="addprojects.html">Add Projects</a></li>
+							<li><a class="dropdown-item" href="projects.html">Manage Projects</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Groups Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Groups </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="groupsDropdown">
+							<li><a class="dropdown-item" href="addgroups.html">Add Group</a></li>
+							<li><a class="dropdown-item" href="groups.html">Manage Group</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
 					
 					  <li class="nav-item">
                         <a href="Students.html" class="nav-link"> <span class='textcolor'>Students</span></a>
@@ -126,146 +154,62 @@
     </nav>
    
 
-    <!--Resources Page-->
-	
-
-
-	
-    <section id="" class="muishadow p-3 pt-md-5 p-lg-5">
-	
-	
-            <div class="row pt-3" style="margin-top:45px; margin-left:60px;">
-                <div class="col-md-6" >
-                    <div class="card text-center align-items-center" style="width: 70rem; height:30rem;">
-					<br/>
-					 <div style="width:80%; display:inline;">
-                         
-						 
-						 
-						 
-						 <form style="display:inline;">
-						 
-						 
-						   <table style="text-align: left; ">
-        <tr >
-           
-            <td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Group's Name:</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's Name">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Group's Instructor :</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's Instructor">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Groups's Project :</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's Project">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Group's Leader :</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's Leader">
-			</td>
-           
-		</tr>
-		<tr> <td> <p style="padding-top:0px;"> </p> </td></tr>
-		<tr  >
-          
-            <td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Member 1</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's member">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Member 2</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's member">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Member 3</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's member">
-			</td>
-			
-			<td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Member 4</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Groups's member">
-			</td>
-           
-		</tr>
-		<tr> <td> <p style="padding-top:0px;"> </p> </td></tr>
-		<TR>
-            
-            <td style=" width: 15%;"><button type="submit" class="btn btn-primary" style="width:50%" onclick="openDashboard();"> Done</button></td>
-        </tr>
-		<tr>
-		<td>
-		<br>
-		 <p style="float:left">Results: </p>
-		<td>
-		</tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-	
-		<br>
-	
-		
-		
-	
-	
-				
-            </form>
-			
-		
-
-<div style="margin-top:-30px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Group 1 has been added successfully.</td>
-            <td> <button> Edit </button> </td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Group 2 has been added successfully.</td>
-			<td> <button> Edit </button> </td>
-            
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-
-
-
-						
+    <section class="p-5 py-5" style="margin-top: 50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<form class="border rounded p-4 shadow-sm">
+						<div class="mb-3 text-start">
+							<label for="groupName" class="form-label">Group's Name:</label>
+							<input type="text" class="form-control" id="groupName" placeholder="Enter Group's Name">
 						</div>
-						
-                    </div>
-					
-                </div>
-                
-				
-				
-            </div>
-        </div>
-    </div>
-    <div class="pb-1"></div>
-</section>
+						<div class="mb-3 text-start">
+							<label for="groupInstructor" class="form-label">Group's Instructor:</label>
+							<input type="text" class="form-control" id="groupInstructor" placeholder="Enter Group's Instructor">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="groupProject" class="form-label">Group's Project:</label>
+							<input type="text" class="form-control" id="groupProject" placeholder="Enter Group's Project">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="groupLeader" class="form-label">Group's Leader:</label>
+							<input type="text" class="form-control" id="groupLeader" placeholder="Enter Group's Leader">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="member1" class="form-label">Member 1:</label>
+							<input type="text" class="form-control" id="member1" placeholder="Enter Member 1">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="member2" class="form-label">Member 2:</label>
+							<input type="text" class="form-control" id="member2" placeholder="Enter Member 2">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="member3" class="form-label">Member 3:</label>
+							<input type="text" class="form-control" id="member3" placeholder="Enter Member 3">
+						</div>
+						<div class="mb-3 text-start">
+							<label for="member4" class="form-label">Member 4:</label>
+							<input type="text" class="form-control" id="member4" placeholder="Enter Member 4">
+						</div>
+						<button type="submit" class="btn btn-primary" onclick="openDashboard();">Done</button>
+					</form>
+				</div>
+				<div class="col-lg-6 mt-4 mt-lg-0">
+					<table class="table border rounded shadow-sm ">
+						<tr>
+							<td>Group 1 has been added successfully.</td>
+							<td class=" text-end"><button class="btn btn-secondary">Edit</button></td>
+						</tr>
+						<tr>
+							<td>Group 2 has been added successfully.</td>
+							<td class="text-end"><button class="btn btn-secondary ">Edit</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 

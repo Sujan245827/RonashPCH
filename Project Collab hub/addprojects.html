@@ -94,16 +94,42 @@
 					<li class="nav-item">
                         <a href="dashboard.html" class="nav-link"> <span class='textcolor'>Dashboard </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="instructors.html" class="nav-link"> <span class='textcolor'> Instructors </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link"> <span class='textcolor'>Projects </span></a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a href="groups.html" class="nav-link"> <span class='textcolor'>Groups</span></a>
-                    </li>
+                    <!-- Instructors Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="instructorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Instructors </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="instructorsDropdown">
+							<li><a class="dropdown-item" href="addinstructors.html">Add Instructors</a></li>
+							<li><a class="dropdown-item" href="instructors.html">Manage Instructors</a></li>
+							
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Projects Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Projects </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="projectsDropdown">
+							<li><a class="dropdown-item" href="addprojects.html">Add Projects</a></li>
+							<li><a class="dropdown-item" href="projects.html">Manage Projects</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Groups Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Groups </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="groupsDropdown">
+							<li><a class="dropdown-item" href="addgroups.html">Add Group</a></li>
+							<li><a class="dropdown-item" href="groups.html">Manage Group</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
 					
 					  <li class="nav-item">
                         <a href="Students.html" class="nav-link"> <span class='textcolor'>Students</span></a>
@@ -126,103 +152,38 @@
     </nav>
    
 
-    <!--Resources Page-->
-	
-
-
-	
-    <section id="" class="muishadow p-3 pt-md-5 p-lg-5">
-	
-	
-            <div class="row pt-3" style="margin-top:45px; margin-left:60px;">
-                <div class="col-md-6" >
-                    <div class="card text-center align-items-center" style="width: 70rem; height:30rem;">
-					<br/>
-					 <div style="width:80%; display:inline;">
-                         
-						 
-						 
-						 
-						 <form style="display:inline;">
-						 
-						 
-						   <table style="text-align: left; ">
-        <tr >
-           
-            <td style=" width: 20%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Project Name:</label>  <br>
-			<input type="text" id="loginEmail" name="loginEmail" placeholder="Enter Project's Name">
-			</td>
-		
-			<td style=" width: 50%; "> 
-			<label style="padding-bottom:10px;" for="loginEmail">Project Description:</label>  <br>
-			<input style=" width: 100%; type="text" id="loginEmail" name="loginEmail" placeholder="Enter Project's Description Here...">
-			</td>
-            
-            
-            <td style=" width: 15%; padding-left:25px;"><button type="submit" class="btn btn-primary" style="width:50%" onclick="openDashboard();"> Done</button></td>
-        </tr>
-		
-		<tr>
-		<td>
-		<br>
-		 <p style="float:left">Results: </p>
-		<td>
-		</tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-	
-		<br>
-	
-		
-		
-	
-	
-				
-            </form>
-			
-		
-
-<div style="margin-top:-30px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Virtual Health Assistant has been added successfully to the project lists.</td>
-            <td> <button> Edit </button> </td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Smart Traffic Management System has been added successfully to the projects lists.</td>
-            <td> <button> Edit </button> </td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-						
-						</div>
-						
+    <section class="p-5 py-5" style="margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <form class="border rounded p-4 shadow-sm">
+                    <div class="mb-3 text-start">
+                        <label for="projectName" class="form-label">Project Name:</label>
+                        <input type="text" class="form-control" id="projectName" placeholder="Enter Project Name">
                     </div>
-					
-                </div>
-                
-				
-				
+                    <div class="mb-3 text-start">
+                        <label for="projectDescription" class="form-label">Project Description:</label>
+                        <textarea class="form-control" id="projectDescription" rows="3" placeholder="Enter Project Description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="openDashboard();">Done</button>
+                </form>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <table class="table border rounded shadow-sm">
+                    <tr>
+                        <td>Virtual Health Assistant has been added successfully to the project lists.</td>
+                        <td class="text-end"><button class="btn btn-secondary">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Smart Traffic Management System has been added successfully to the projects lists.</td>
+                        <td class="text-end"><button class="btn btn-secondary">Edit</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <div class="pb-1"></div>
 </section>
+
 
 
 

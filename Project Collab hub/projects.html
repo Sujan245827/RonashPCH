@@ -94,16 +94,42 @@
 					<li class="nav-item">
                         <a href="dashboard.html" class="nav-link"> <span class='textcolor'>Dashboard </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="instructors.html" class="nav-link"> <span class='textcolor'> Instructors </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link"> <span class='textcolor'>Projects </span></a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a href="groups.html" class="nav-link"> <span class='textcolor'>Groups</span></a>
-                    </li>
+                    <!-- Instructors Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="instructorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Instructors </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="instructorsDropdown">
+							<li><a class="dropdown-item" href="addinstructors.html">Add Instructors</a></li>
+							<li><a class="dropdown-item" href="instructors.html">Manage Instructors</a></li>
+							
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Projects Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Projects </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="projectsDropdown">
+							<li><a class="dropdown-item" href="addprojects.html">Add Projects</a></li>
+							<li><a class="dropdown-item" href="projects.html">Manage Projects</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Groups Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Groups </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="groupsDropdown">
+							<li><a class="dropdown-item" href="addgroups.html">Add Group</a></li>
+							<li><a class="dropdown-item" href="groups.html">Manage Group</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
 					
 					  <li class="nav-item">
                         <a href="Students.html" class="nav-link"> <span class='textcolor'>Students</span></a>
@@ -126,88 +152,54 @@
     </nav>
    
 
-    <!--Resources Page-->
+    
 	
-
-
-	
-    <section id="" class="muishadow p-3 pt-md-5 p-lg-5">
-	
-	
-            <div class="row pt-3" style="margin-top:45px; margin-left:60px;">
-                <div class="col-md-6" >
-                    <div class="card text-center align-items-center" style="width: 70rem; height:30rem;">
-					<br/>
-					 <div style="width:80%;">
-                         <form class="d-flex btn-group pe-2  pb-2 " >
-                        <input class="form-control  me-0"  size="35" type="search" placeholder="Search for Projects" aria-label="Search">
-                        <button type="button" class="btn btn-secondary ">Search</button>
-
-						</form>
-						<br>
-						<div class="card p-1">
-    <table style="">
-        <tr>
-            <th style=" width: 5%;">SN</td>
-            <th style=" width: 30%;">Project Name</td>
-            <th style=" width: 20%;">Instructors</td>
-            <th style=" width: 10%;"> Groups</td>
-            <th style=" width: 20%;">Progress</td>
-            <th style=" width: 8%;">Edit</td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style=" width: 5%;">1</td>
-            <td style=" width: 30%;">Intelligent Home Automation System</td>
-            <td style=" width: 20%;">Dr Graeme Salter</td>
-            <td style=" width: 10%;">Group 1</td>
-            <td style=" width: 20%;"> <button style="background-color:#8bd97e; width:80%;"> 100% </button></td>
-            <td style=" width: 8%;"><button > Edit </button></td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style=" width: 5%;">2</td>
-            <td style=" width: 30%;">Smart Traffic Management System</td>
-            <td style=" width: 20%;">Dr Ali Braytee</td>
-            <td style=" width: 10%;">Group 2</td>
-            <td style=" width: 20%;"> <button style="background-color:#8bd97e; width:80%;"> 100% </button></td>
-            <td style=" width: 8%;"><button > Edit </button></td>
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-						
-						</div>
-						
-                    </div>
-					
-                </div>
-                
-				
-				
-            </div>
-        </div>
-    </div>
-    <div class="pb-1"></div>
-</section>
+    <section class=" p5 text-center py-5" style= "margin-top:50px;">
+		<div class="container" >
+			<div class="card text-center">
+				<div class="card-body">
+					<form class="d-flex justify-content-center align-items-center">
+						<input class="form-control me-2 flex-grow-1" type="search" placeholder="Search for Projects" aria-label="Search">
+						<button type="button" class="btn btn-secondary">Search</button>
+					</form>
+					<div class="table-responsive mt-3">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th style="width: 5%;">SN</th>
+									<th style="width: 30%;">Project Name</th>
+									<th style="width: 20%;">Instructors</th>
+									<th style="width: 10%;">Groups</th>
+									<th style="width: 20%;">Progress</th>
+									<th style="width: 8%;">Edit</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Intelligent Home Automation System</td>
+									<td>Dr Graeme Salter</td>
+									<td>Group 1</td>
+									<td><button class="btn btn-success" style="width: 80%;">100%</button></td>
+									<td><button class="btn btn-primary">Edit</button></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Smart Traffic Management System</td>
+									<td>Dr Ali Braytee</td>
+									<td>Group 2</td>
+									<td><button class="btn btn-success" style="width: 80%;">100%</button></td>
+									<td><button class="btn btn-primary">Edit</button></td>
+								</tr>
+								
+								<!-- Add more rows if needed -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 

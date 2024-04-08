@@ -94,16 +94,42 @@
 					<li class="nav-item">
                         <a href="dashboard.html" class="nav-link"> <span class='textcolor'>Dashboard </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="instructors.html" class="nav-link"> <span class='textcolor'> Instructors </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link"> <span class='textcolor'>Projects </span></a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a href="groups.html" class="nav-link"> <span class='textcolor'>Groups</span></a>
-                    </li>
+                    <!-- Instructors Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="instructorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Instructors </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="instructorsDropdown">
+							<li><a class="dropdown-item" href="addinstructors.html">Add Instructors</a></li>
+							<li><a class="dropdown-item" href="instructors.html">Manage Instructors</a></li>
+							
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Projects Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Projects </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="projectsDropdown">
+							<li><a class="dropdown-item" href="addprojects.html">Add Projects</a></li>
+							<li><a class="dropdown-item" href="projects.html">Manage Projects</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
+
+					<!-- Groups Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class='textcolor'> Groups </span>
+						</a>
+						<ul class="dropdown-menu w-50" aria-labelledby="groupsDropdown">
+							<li><a class="dropdown-item" href="addgroups.html">Add Group</a></li>
+							<li><a class="dropdown-item" href="groups.html">Manage Group</a></li>
+							<!-- Add more dropdown items as needed -->
+						</ul>
+					</li>
 					
 					  <li class="nav-item">
                         <a href="Students.html" class="nav-link"> <span class='textcolor'>Students</span></a>
@@ -126,66 +152,53 @@
     </nav>
    
 
-    <!--Resources Page-->
-	
-
-
-	
-    <section id="" class="muishadow p-3 pt-md-5 p-lg-5">
-	
-	
-            <div class="row pt-3" style="margin-top:45px; margin-left:60px;">
-                <div class="col-md-6" >
-                    <div class="card text-center align-items-center" style="width: 70rem; height:30rem;">
-					<br/>
-					 <div style="width:80%;">
-                         <form class="d-flex btn-group pe-2  pb-2 " >
-                        <input class="form-control  me-0"  size="35" type="search" placeholder="Search for Notifications" aria-label="Search">
-                        <button type="button" class="btn btn-secondary ">Search</button>
-
-						</form>
-					
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Adam Smith has sent you a message : This is my message.</td>
-            
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-
-<div style="padding-top:10px;"></div>
-<div class="card p-1">
-    <table style="">
-        <tr >
-            <td style="display:flex; padding-left:10px;"> Adam Smith has requested to join the group : Group Name</td>
-            
-        </tr>
-       
-        <!-- Add more rows if needed -->
-    </table>
-</div>
-
-						
-						</div>
-						
-                    </div>
-					
-                </div>
-                
-				
-				
-            </div>
-        </div>
-    </div>
-    <div class="pb-1"></div>
-</section>
+    <section class=" p5 text-center py-5" style= "margin-top:50px;">
+		<div class="container" >
+			<div class="card text-center">
+				<div class="card-body">
+					<form class="d-flex justify-content-center align-items-center">
+						<input class="form-control me-2 flex-grow-1" type="search" placeholder="Search for Notifications" aria-label="Search">
+						<button type="button" class="btn btn-secondary">Search</button>
+					</form>
+					<div class="table-responsive mt-3">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th style="width: 5%;">SN</th>
+									<th style="width: 20%;">User Name</th>
+									<th style="width: 15%;">Type</th>
+									<th style="width: 40%;">Description</th>
+									<th style="width: 30%;">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td >1</td>
+									<td >Adam  Ken </td>
+									<td >Message</td>
+									<td >Hello, How are you? </td>
+									<td><button class="btn btn-primary">Reply</button></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Kenny Rob</td>
+									<td >Request</td>
+									<td>Hello sir, I want to join Group 1</td>
+									<td>
+									<button class="btn btn-success " style="display:inline;">Accept</button>
+									<button class="btn btn-danger d-inline" style="display:inline;">Decline</button>
+									</td>
+								</tr>
+								
+								
+								<!-- Add more rows if needed -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
