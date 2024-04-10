@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
-    <title>PCH - Dashboard </title>
+    <title>PCH - GroupInfo </title>
 
     <!-- shadow effect for navbar and section end  -->
     <style>
@@ -56,6 +56,12 @@
 			padding-top:10px;
 			padding-bottom:10px;
 		}
+		
+		 [contenteditable="true"]:focus {
+			outline: none;
+			
+		}
+    
     </style>
 
 </head>
@@ -163,116 +169,225 @@
 	
    
 
-	<section class=" p5 text-center py-5" style= "margin-top:50px;">
-        <div class="container" >
-			<div class="row">
-				<aside class=" bg-white col-md-3">
-					
-					<!--
-					<div class="card text-center align-items-center ">
-						
-						<div class="card-body py-3">
-						
-							
-							<h5>Welcome, Admin !!!</h5>
-							 
-							<p>Here are some quick menu buttons which can be used to do basic tasks.</p>
-							<p><a href="addinstructors.html" class="btn btn-primary">Add Instructors</a></p>
-							<p><a href="addprojects.html" class="btn btn-primary">Add Projects</a> </p>
-							<p><a href="addgroups.html" class="btn btn-primary">Add Groups</a></p>
-							
-						</div>
-						
-						
-					</div>
-					
-					-->
+	<section class="p5 text-left py-5" style="margin-top:50px;">
+    <div class="container">
+        <div class="row">
+            <aside class="bg-white col-md-3">
 
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Total Users</p>
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/ui.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size: 20px;">423</p>
+                <!--
+                <div class="card text-center align-items-center ">
+                    
+                    <div class="card-body py-3">
+                    
+                        
+                        <h5>Welcome, Admin !!!</h5>
+                         
+                        <p>Here are some quick menu buttons which can be used to do basic tasks.</p>
+                        <p><a href="addinstructors.html" class="btn btn-primary">Add Instructors</a></p>
+                        <p><a href="addprojects.html" class="btn btn-primary">Add Projects</a> </p>
+                        <p><a href="addgroups.html" class="btn btn-primary">Add Groups</a></p>
+                        
+                    </div>
+                    
+                    
+                </div>
+                -->
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Group Name: </h6> 
+                        <span>T324 Group1</span>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Project Name: </h6> 
+                        <span>Smart Home Automation System</span>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Instructor: </h6> 
+                        <span>Dr. Ali Barytee</span>
+                        
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Team Members: </h6> 
+                        <span>Michel Jonhson</span><br>
+                        <span>Adim Smith</span><br>
+                        <span>Emily Brown</span><br>
+                        <span>Max Mann</span><br>
+                        <span>Felix Rousy</span>
+                    </div>
+                </div>
+
+                
+            </aside>
+
+            <div class="col-md-6">
+			
+							<!-- First row: Chat Box -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card text-center align-items-center mb-3">
+										<span class="pt-1"></span>
+										<h6>Group Chat Box</h6>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 
-
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Groups Created </p>
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/gi.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size:20px;">98</p> 
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card mb-3">
+										<div class="card-body " style="background-color: white; height: 405px; overflow-y: auto;">
+											<div class="sender-message">
+												<p><strong>You:</strong> Hi there!</p>
+											</div>
+											<div class="receiver-message">
+												<p><strong>Michel Jonhson:</strong> Hey! How's it going?</p>
+											</div>
+											<div class="sender-message">
+												<p><strong>You:</strong> Not too bad, just catching up on some work. What about you?</p>
+											</div>
+											<div class="receiver-message">
+												<p><strong>Michel Jonhson:</strong> Hey! How's it going?</p>
+											</div>
+											<div class="sender-message">
+												<p><strong>You:</strong> Not too bad, just catching up on some work. What about you?</p>
+											</div>
+											<div class="receiver-message">
+												<p><strong>Michel Jonhson:</strong> Hey! How's it going?</p>
+											</div>
+											<div class="sender-message">
+												<p><strong>You:</strong> Not too bad, just catching up on some work. What about you?</p>
+											</div>
+											<div class="receiver-message">
+												<p><strong>Michel Jonhson:</strong> Hey! How's it going?</p>
+											</div>
+											<div class="sender-message">
+												<p><strong>You:</strong> Not too bad, just catching up on some work. What about you?</p>
+											</div>
+											<div class="receiver-message">
+												<p><strong>Michel Jonhson:</strong> Hey! How's it going?</p>
+											</div>
+											<div class="sender-message">
+												<p><strong>You:</strong> Not too bad, just catching up on some work. What about you?</p>
+											</div>
+											<!-- Add more messages as needed -->
+										</div>
+									</div>
 								</div>
 							</div>
-					
-						</div>
-					</div>
 
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Ongoing Projects </p>
-							
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/pi.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size:20px;">106</p>  
+							<div class="row">
+								<div class="col-md-12">
+									<div class="input-group mb-3">
+										<input type="text" class="form-control" placeholder="Type your message here" aria-label="Type your message here" aria-describedby="button-send">
+										
+										<button class="btn btn-primary" type="button" id="button-send">Send</button>
+									</div>
 								</div>
 							</div>
-							
-						</div>
-					</div>
-				</aside>
+                
 
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="card text-center align-items-center mb-3">
-								<span class="pt-3"></span>
-								<h6> Student Distribution</h6>
-								<div id="donutchart" style="margin-top:-40px; position:center; width: 100%; height: 300px;"></div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="card text-center align-items-center mb-3">
-								<span class="pt-3"></span>
-								<h6> Risk Indicator </h6>
-								<div id="donutchart2" style="margin-top:-40px; position:center; width: 100%; height: 300px;"></div>
-							</div>
-						</div>
-					</div>
+            </div>
 
-					<!-- Second row: 1 -->
+            <div class="col-md-3">
+			
+                <!-- Second row: Right-aligned div -->
+                <div class="row">
+                    <div class="col-md-12">
+					<div >
+                        <div class="card text-center align-items-center mb-3">
+                           
+                       
+							<select class="form-select" aria-label="Default select example">
+							<option selected>Group Task:</option>
+							<option value="week1">Week 1</option>
+							<option value="week2">Week 2</option>
+							<option value="week3">Week 3</option>
+							<option value="week4">Week 4</option>
+							<option value="week5">Week 5</option>
+							<option value="week6">Week 6</option>
+							<option value="week7">Week 7</option>
+							<option value="week8">Week 8</option>
+							<option value="week9">Week 9</option>
+							<option value="week10">Week 10</option>
+							<option value="week11">Week 11</option>
+							<option value="week12">Week 12</option>
+							</select>
+                            
+                        </div>
+                    </div>
+					</div>
+                </div>
+				
+				<div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-1">
+                            <div class="card-body" style="background-color: white; height: 395px; overflow-y: auto;" contenteditable="true">
+                                <div >
+                                    <p><strong>Michel Jonhson:</strong> Task Detail</p>
+                                </div>
+								<div >
+                                    <p><strong>Adim Smith:</strong> Task Detail</p>
+                                </div>
+								<div >
+                                    <p><strong>Emily Brown:</strong> Task Detail</p>
+                                </div>
+								<div >
+                                    <p><strong>Max Mann:</strong> Task Detail</p>
+                                </div>
+								<div >
+                                    <p><strong>Felix Rousy:</strong> Task Detail</p>
+                                </div>
+                                
+                                <!-- Add more messages as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="row pt-3">
+					<div class="col-md-12 text-end"> <!-- Add text-end class here -->
+						<span class="btn btn-success ">Mark Complete</span>
+						<span class="p-1"> </span>
+						<span class="btn btn-primary">Update Task</span>
+					</div>
+				</div>
+				
+				
+				
+            </div>
+			
+			<!-- third row: 1 -->
 					<div class="row pt-3">
-						<div class="col-md-12">
-							<div class="card text-center align-items-center mb-3">
+						<div class="col 12">
+							<div class="card text-center align-items-center mb-3" style="background-color:; margin-right:-20px;"  >
 								<span class="pt-3"></span>
-								<h6> Active Users, Users Activity</h6>
+								<h6> Group Members Activity</h6>
 								<div id="columnchart_values" style="margin-top:-40px; position:center; width: 120%; height: 400px;"></div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+			
+			
+			
+        </div>
+		
+		
+    </div>
+</section>
+
 
 	<!-- Google Charts -->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -299,55 +414,12 @@
 	<!-- Google Charts scripts for other charts -->
 	<!-- Include your other Google Charts scripts here -->
 
+	
+
+	
+
 	<script type="text/javascript">
 		google.charts.load("current", {packages:["corechart"]});
-		google.charts.setOnLoadCallback(drawChart);
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Task', 'Hours per Day'],
-				['Student in Groups', 11],
-				['Students not in Groups', 2],
-				['Groups working on Projects', 7]
-			]);
-
-			var options = {
-				
-				
-				pieHole: 0.2,
-				backgroundColor: 'transparent', // Set background color to transparent
-				legend: { position: 'bottom',alignment: 'center' } // Center align legend
-			};
-
-			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-			chart.draw(data, options);
-		}
-	</script>
-
-	<script type="text/javascript">
-		google.charts.setOnLoadCallback(drawChart2);
-		function drawChart2() {
-			var data2 = google.visualization.arrayToDataTable([
-				['Risk', 'Percentage'],
-				['At Risk', 20],
-				['Not At Risk', 80]
-			]);
-
-			var options2 = {
-				pieHole: 0.2,
-				backgroundColor: 'transparent',
-				slices: {
-					0: { color: 'red' },
-					1: { color: 'green' }
-				},
-				legend: { position: 'bottom', alignment: 'center' } // Center-align legend
-			};
-
-			var chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
-			chart2.draw(data2, options2);
-		}
-	</script>
-
-	<script type="text/javascript">
 		google.charts.setOnLoadCallback(drawChart);
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
@@ -372,7 +444,7 @@
 				width: '100%',
 				height: 400,
 				hAxis: {
-					title: 'Active users VS Weeks',
+					title: 'Activity VS Weeks',
 					textStyle: {fontSize: 12}
 				},
 				vAxis: {

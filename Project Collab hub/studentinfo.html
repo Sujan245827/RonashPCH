@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
-    <title>PCH - Dashboard </title>
+    <title>PCH - GroupInfo </title>
 
     <!-- shadow effect for navbar and section end  -->
     <style>
@@ -56,6 +56,12 @@
 			padding-top:10px;
 			padding-bottom:10px;
 		}
+		
+		 [contenteditable="true"]:focus {
+			outline: none;
+			
+		}
+    
     </style>
 
 </head>
@@ -163,231 +169,104 @@
 	
    
 
-	<section class=" p5 text-center py-5" style= "margin-top:50px;">
-        <div class="container" >
-			<div class="row">
-				<aside class=" bg-white col-md-3">
+	<section class="p5 text-left py-5" style="margin-top:50px;">
+    <div class="container">
+        <div class="row">
+            <aside class="bg-white col-md-3">
+
+                <!--
+                <div class="card text-center align-items-center ">
+                    
+                    <div class="card-body py-3">
+                    
+                        
+                        <h5>Welcome, Admin !!!</h5>
+                         
+                        <p>Here are some quick menu buttons which can be used to do basic tasks.</p>
+                        <p><a href="addinstructors.html" class="btn btn-primary">Add Instructors</a></p>
+                        <p><a href="addprojects.html" class="btn btn-primary">Add Projects</a> </p>
+                        <p><a href="addgroups.html" class="btn btn-primary">Add Groups</a></p>
+                        
+                    </div>
+                    
+                    
+                </div>
+                -->
+				
+				 <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Student Name: </h6> 
+                        <span>Michel Jonhson</span>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Group Name: </h6> 
+                        <span>T324 Group1</span>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Project Name: </h6> 
+                        <span>Smart Home Automation System</span>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Instructor: </h6> 
+                        <span>Dr. Ali Barytee</span>
+                        
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3">
+                    <span class="pt-0"> </span>
+                    <div class="card-body">
+                        <h6>Team Members: </h6> 
+                        <span>Michel Jonhson</span><br>
+                        <span>Adim Smith</span><br>
+                        <span>Emily Brown</span><br>
+                        <span>Max Mann</span><br>
+                        <span>Felix Rousy</span>
+                    </div>
+                </div>
+
+                
+            </aside>
+
+            <div class="col-md-9">
+				<div class="card p-5">
+					<form>
 					
-					<!--
-					<div class="card text-center align-items-center ">
-						
-						<div class="card-body py-3">
-						
-							
-							<h5>Welcome, Admin !!!</h5>
-							 
-							<p>Here are some quick menu buttons which can be used to do basic tasks.</p>
-							<p><a href="addinstructors.html" class="btn btn-primary">Add Instructors</a></p>
-							<p><a href="addprojects.html" class="btn btn-primary">Add Projects</a> </p>
-							<p><a href="addgroups.html" class="btn btn-primary">Add Groups</a></p>
-							
-						</div>
-						
-						
-					</div>
-					
-					-->
-
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Total Users</p>
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/ui.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size: 20px;">423</p>
-								</div>
-							</div>
-						</div>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">To:</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text"> </div>
 					</div>
 
-
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Groups Created </p>
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/gi.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size:20px;">98</p> 
-								</div>
-							</div>
-					
-						</div>
+					<div class="mb-3">
+						<label for="exampleInputMessage" class="form-label">Your Message</label>
+						<textarea class="form-control" id="exampleInputMessage" rows="3"></textarea>
+						<div id="message" class="form-text"> </div>
 					</div>
-
-					<div class="card text-center align-items-center mb-3">
-						<span class="pt-1"> </span>
-						
-						<div class="card-body">
-							<p>Ongoing Projects </p>
-							
-							<div class="row align-items-center">
-								<div class="">
-									<img src="img/pi.png" class="card-img-top img-fluid" alt="..." style="max-width: 50%;">
-								</div>
-								<div class="">
-									<p style="font-size:20px;">106</p>  
-								</div>
-							</div>
-							
-						</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">I am not a robot.</label>
 					</div>
-				</aside>
-
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="card text-center align-items-center mb-3">
-								<span class="pt-3"></span>
-								<h6> Student Distribution</h6>
-								<div id="donutchart" style="margin-top:-40px; position:center; width: 100%; height: 300px;"></div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="card text-center align-items-center mb-3">
-								<span class="pt-3"></span>
-								<h6> Risk Indicator </h6>
-								<div id="donutchart2" style="margin-top:-40px; position:center; width: 100%; height: 300px;"></div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Second row: 1 -->
-					<div class="row pt-3">
-						<div class="col-md-12">
-							<div class="card text-center align-items-center mb-3">
-								<span class="pt-3"></span>
-								<h6> Active Users, Users Activity</h6>
-								<div id="columnchart_values" style="margin-top:-40px; position:center; width: 120%; height: 400px;"></div>
-							</div>
-						</div>
-					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Google Charts -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script>
-		// Get the canvas element
-		var ctx = document.getElementById('individualPieChart').getContext('2d');
-
-		// Define data for the pie chart
-		var data = {
-			labels: ['Red', 'Blue', 'Yellow'],
-			datasets: [{
-				data: [30, 20, 50],
-				backgroundColor: ['red', 'blue', 'yellow']
-			}]
-		};
-
-		// Initialize the pie chart
-		var individualPieChart = new Chart(ctx, {
-			type: 'pie',
-			data: data
-		});
-	</script>
-
-	<!-- Google Charts scripts for other charts -->
-	<!-- Include your other Google Charts scripts here -->
-
-	<script type="text/javascript">
-		google.charts.load("current", {packages:["corechart"]});
-		google.charts.setOnLoadCallback(drawChart);
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Task', 'Hours per Day'],
-				['Student in Groups', 11],
-				['Students not in Groups', 2],
-				['Groups working on Projects', 7]
-			]);
-
-			var options = {
-				
-				
-				pieHole: 0.2,
-				backgroundColor: 'transparent', // Set background color to transparent
-				legend: { position: 'bottom',alignment: 'center' } // Center align legend
-			};
-
-			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-			chart.draw(data, options);
-		}
-	</script>
-
-	<script type="text/javascript">
-		google.charts.setOnLoadCallback(drawChart2);
-		function drawChart2() {
-			var data2 = google.visualization.arrayToDataTable([
-				['Risk', 'Percentage'],
-				['At Risk', 20],
-				['Not At Risk', 80]
-			]);
-
-			var options2 = {
-				pieHole: 0.2,
-				backgroundColor: 'transparent',
-				slices: {
-					0: { color: 'red' },
-					1: { color: 'green' }
-				},
-				legend: { position: 'bottom', alignment: 'center' } // Center-align legend
-			};
-
-			var chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
-			chart2.draw(data2, options2);
-		}
-	</script>
-
-	<script type="text/javascript">
-		google.charts.setOnLoadCallback(drawChart);
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Week', 'Value'],
-				['Week 1', 20],
-				['Week 2', 30],
-				['Week 3', 40],
-				['Week 4', 50],
-				['Week 5', 60],
-				['Week 6', 70],
-				['Week 7', 80],
-				['Week 8', 90],
-				['Week 9', 95],
-				['Week 10', 80],
-				['Week 11', 70],
-				['Week 12', 60]
-			]);
-
-			var options = {
-				title: "",
-				backgroundColor: 'transparent',
-				width: '100%',
-				height: 400,
-				hAxis: {
-					title: 'Active users VS Weeks',
-					textStyle: {fontSize: 12}
-				},
-				vAxis: {
-					title: '',
-					minValue: 1,
-					maxValue: 100
-				},
-				legend: { position: "none" }
-			};
-
-			var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-			chart.draw(data, options);
-		}
-	</script>
-
+			</div>				
+</div>
+</div>
+</section>
 
 
         <!-- Footer -->
